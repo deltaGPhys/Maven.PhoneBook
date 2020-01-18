@@ -8,6 +8,18 @@ import java.util.List;
 
 public class AddAllTest {
 
+    @Test
+    public void simpleTest() {
+        // given
+        PhoneBook phoneBook = new PhoneBook();
+        String name = "Joe";
+        String phoneNumber = "302-555-4444";
+
+        // when
+        phoneBook.add(name, phoneNumber);
+        List<String> actualPhoneNumbers = phoneBook.lookup(name);
+        Assert.assertEquals(Arrays.asList(phoneNumber), actualPhoneNumbers);
+    }
 
     @Test
     public void test1() {

@@ -16,6 +16,7 @@ public class GetAllContactNames {
             String name = names[i];
             phoneBook.add(name, "");
         }
+        Arrays.sort(names);/////
 
         // when
         List<String> actualNames = phoneBook.getAllContactNames();
@@ -33,6 +34,7 @@ public class GetAllContactNames {
             String name = names[i];
             phoneBook.add(name, "");
         }
+        Arrays.sort(names);/////
 
         // when
         List<String> actualNames = phoneBook.getAllContactNames();
@@ -50,6 +52,7 @@ public class GetAllContactNames {
             String name = names[i];
             phoneBook.add(name, "");
         }
+        Arrays.sort(names);/////
 
         // when
         List<String> actualNames = phoneBook.getAllContactNames();
